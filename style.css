@@ -1,0 +1,15 @@
+.calcBtn{    
+    height: 50px;
+    width: 67px;
+    margin: 3px;
+}
+
+.btnResult{    
+    height: 220px;
+    width: 67px;
+    margin: 3px;
+}
+
+#displayDigits { 
+    text-align: right; 
+}

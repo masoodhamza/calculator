@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container bg-secondary">
+      <div class="row">
+        <div class="col-4 offset-4 bg-light my-5">
+          <div class="card">
+            <div class="card-header">Calculator</div>
+            <div class="card-body">
+              <div>
+                <input type="text" name="" id="displayDigits" class="form-control" readonly/>
+              </div>
+
+              <div class="my-2">
+                  <button onclick="operation('-')" class="btn btn-secondary calcBtn opBtn" disabled>-</button>
+                  <button onclick="operation('+')" class="btn btn-secondary calcBtn opBtn" disabled>+</button>
+                  <button onclick="operation('*')" class="btn btn-secondary calcBtn opBtn" disabled>x</button>
+                  <button onclick="operation('/')" class="btn btn-secondary calcBtn opBtn" disabled>&divide;</button>
+                  <button onclick="printDigit('7')" class="btn btn-light calcBtn digit">7</button>
+                  <button onclick="printDigit('8')" class="btn btn-light calcBtn digit">8</button>
+                  <button onclick="printDigit('9')" class="btn btn-light calcBtn digit">9</button>
+                  <button onclick="calculate()" class="btn btn-primary btnResult float-right" disabled>=</button>
+                  <button onclick="printDigit('4')" class="btn btn-light calcBtn digit">4</button>
+                  <button onclick="printDigit('5')" class="btn btn-light calcBtn digit">5</button>
+                  <button onclick="printDigit('6')" class="btn btn-light calcBtn digit">6</button>
+                  <button onclick="printDigit('1')" class="btn btn-light calcBtn digit">1</button>
+                  <button onclick="printDigit('2')" class="btn btn-light calcBtn digit">2</button>
+                  <button onclick="printDigit('3')" class="btn btn-light calcBtn digit">3</button>
+                  <button onclick="printDigit('0')" class="btn btn-light calcBtn digit">0</button>
+                  <button onclick="printDigit('.')" class="btn btn-light calcBtn digit decimalBtn">.</button>
+                  <button onclick="clearDigits()" class="btn btn-light calcBtn">C</button>
+              </div>              
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Developed by: </small><a href="/index.html">Hamza Masood</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
